@@ -3,15 +3,15 @@ import Pokecard from './Pokecard.js'
 import pokies from './defaultPokemons.js';
 import './Pokedex.css';
 
-const Pokedex = (props=pokies) => (
+const Pokedex = ({deck}=pokies) => (
   <div className="Pokedex-div">
-    {props.map(p => (
+    {deck.map(c => (
       <Pokecard 
-        key={p.id} 
-        id={p.id}
-        name={p.name} 
-        type={p.type}
-        exp={p.base_experience}
+        key={c.id} 
+        id={c.id}
+        name={c.name} 
+        type={c.type}
+        exp={c.base_experience}
       />
     ))};
   </div>
