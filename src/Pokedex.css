@@ -1,0 +1,9 @@
+.Pokedex-div {
+	display: block;
+	position: absolute;
+	background-color: #a5d8ec;
+	padding: 20px;
+	margin: 5vw;
+	width: 90vw;
+	border-radius: 2vw;
+}
